@@ -16,6 +16,7 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
 );
 
 builder.Services.AddScoped<IRacersService, RacersService>();
+builder.Services.AddScoped<ITrackService, TrackService>();
 
 var app = builder.Build();
 
